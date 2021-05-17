@@ -28,6 +28,7 @@
 * [Building a DevSecOps CD/CI Pipeline](practice.-create-a-local-devsecops-environment/README.md)
   * [Vulnerable Web Apps](practice.-create-a-local-devsecops-environment/vulnerable-web-apps.md)
   * [Self-hosted DevOps CD/CI platforms](practice.-create-a-local-devsecops-environment/get-a-devops-platform.md)
+  * [Vulnerability Score CVSS](practice.-create-a-local-devsecops-environment/vulnerability-score-cvss.md)
   * [Software Component Analysis \(SCA\)](practice.-create-a-local-devsecops-environment/software-component-analysis-sca.md)
   * [Static Application Security Testing \(SAST\)](practice.-create-a-local-devsecops-environment/static-application-security-testing-sast.md)
   * [Dynamic Application Security Testing \(DAST\)](practice.-create-a-local-devsecops-environment/dynamic-application-security-testing-dast.md)
