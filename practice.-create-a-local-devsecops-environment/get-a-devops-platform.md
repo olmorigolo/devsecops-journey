@@ -74,15 +74,15 @@ Pay attention the fix is not permanent, reconfigure or restart the container wil
 
 Docs [https://docs.gitlab.com/runner/](https://docs.gitlab.com/runner/)
 
-#### With docker-compose
+#### With docker-compose on the local machine
 
 People are asking fo a docker-compose file that creates the gitlab instance and registers runners at the same time. Here are come solutions: [https://gitlab.com/gitlab-org/gitlab/-/issues/23911](https://gitlab.com/gitlab-org/gitlab/-/issues/23911)
 
-#### With amazon aws kubenetes service
+#### With amazon aws kubenetes service on remote machines
 
 TBD I'll write about this in the future.
 
-#### Manually as a docker container
+#### With docker on the local machine
 
 Add a docker container with the gitlab-runner image
 
