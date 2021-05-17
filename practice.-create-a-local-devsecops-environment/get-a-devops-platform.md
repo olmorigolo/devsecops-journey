@@ -63,6 +63,12 @@ GITLAB_HOME=/srv/gitlab
 HOST_NAME=gitlab.example.com
 ```
 
+Run the file with
+
+```text
+docker-compose up -d
+```
+
 You can observe the status of your gitlab-web instance with 
 
 ```text
@@ -136,7 +142,7 @@ docker run -d --name gitlab-runner --restart always \
 3. Clone a vulnerable app from github `git clone` [`https://github.com/stamparm/DSVW.git`](https://github.com/stamparm/DSVW.git)\`\`
 4. Push it to you local gitlab instance `git push --set-upstream git@localhost:vulnlab/dsvw.git`
 
-### 
+\*\*\*\*🏁 **Start building your pipeline!**
 
 ### More
 
