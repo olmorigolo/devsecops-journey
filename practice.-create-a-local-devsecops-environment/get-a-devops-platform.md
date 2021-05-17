@@ -23,7 +23,7 @@ web:
 
 When starting the container with `docker-compose up -d`I ran into the following  problem [https://gitlab.com/gitlab-org/omnibus-gitlab/-/issues/3705](https://gitlab.com/gitlab-org/omnibus-gitlab/-/issues/3705).
 
-### Fix
+### Installation Fix
 
 To fix it, go into the container with `docker exec -it gitlab_web /bin/bash` then do one of the following:
 
