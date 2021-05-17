@@ -1,0 +1,50 @@
+# Table of contents
+
+* [Getting Started](README.md)
+* [Training Guide](learn.md)
+* [DevSecOps Skills and Tools](skills-youll-need/README.md)
+  * [Basics](skills-youll-need/basics/README.md)
+    * [Networking](skills-youll-need/basics/networking.md)
+    * [OS knowledge](skills-youll-need/basics/os-knowledge.md)
+  * [Culture](skills-youll-need/culture.md)
+  * [Operations](skills-youll-need/operations/README.md)
+    * [Containers](skills-youll-need/operations/containers/README.md)
+      * [Docker](skills-youll-need/operations/containers/docker.md)
+      * [Docker security](skills-youll-need/operations/containers/docker-security.md)
+    * [Infrastructure as code](skills-youll-need/operations/infrastructure-as-code.md)
+    * [Compliance as code](skills-youll-need/operations/compliance-as-code.md)
+    * [Clouds](skills-youll-need/operations/clouds/README.md)
+      * [Kubernetes](skills-youll-need/operations/clouds/kubernetes.md)
+  * [Development](skills-youll-need/development/README.md)
+    * [Python Programming](skills-youll-need/development/python-programming.md)
+  * [Security](skills-youll-need/security/README.md)
+    * [RBAC / ABAC](skills-youll-need/security/rbac-abac.md)
+    * [Pentesting](skills-youll-need/security/pentesting/README.md)
+      * [Vulnerability assessment](skills-youll-need/security/pentesting/vulnerability-assessment.md)
+      * [Scanning networks](skills-youll-need/security/pentesting/untitled.md)
+      * [Enumeration](skills-youll-need/security/pentesting/enumeration.md)
+    * [The OWASP Offensive Web Testing Framework](skills-youll-need/security/practice.-the-owasp-offensive-web-testing-framework.md)
+* [Ready-to-use and train DevSecOps CD/CI Pipeline](ready-to-use-and-train-devsecops-cd-ci-pipeline.md)
+* [Building a DevSecOps CD/CI Pipeline](practice.-create-a-local-devsecops-environment/README.md)
+  * [Vulnerable Web Apps](practice.-create-a-local-devsecops-environment/vulnerable-web-apps.md)
+  * [Self-hosted DevOps CD/CI platforms](practice.-create-a-local-devsecops-environment/get-a-devops-platform.md)
+  * [Software Component Analysis \(SCA\)](practice.-create-a-local-devsecops-environment/software-component-analysis-sca.md)
+  * [Static Application Security Testing \(SAST\)](practice.-create-a-local-devsecops-environment/static-application-security-testing-sast.md)
+  * [Dynamic Application Security Testing \(DAST\)](practice.-create-a-local-devsecops-environment/dynamic-application-security-testing-dast.md)
+  * [System Hardening](practice.-create-a-local-devsecops-environment/system-hardening.md)
+  * [System Compliance Analysis](practice.-create-a-local-devsecops-environment/system-compliance-analysis.md)
+  * [Vulnerability Analysis](practice.-create-a-local-devsecops-environment/vulnerability-analysis.md)
+* [The Security Development Lifecycle \(SDL\)](the-security-development-lifecycle-sdl.md)
+
+## Learning notes <a id="notes"></a>
+
+* [Career notes](notes/career-notes.md)
+
+## Resources
+
+* [Literature](resources/reads..md)
+* [Useful Tool Tutorials](resources/useful-tool-tutorials.md)
+* [Useful Online Tools](resources/useful-online-tools.md)
+* [Footprinting tools](resources/untitled.md)
+* [Exploits](resources/exploits.md)
+
