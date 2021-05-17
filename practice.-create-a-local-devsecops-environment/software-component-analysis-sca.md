@@ -247,9 +247,7 @@ Installation
 
 `curl -sL https://deb.nodesource.com/setup_10.x | bash -`
 
-`apt install nodejs -y`
-
-`npm install -g auditjs`
+`apt install nodejs -y && npm install -g auditjs`
 
 Running the help tells us about different scans:
 
@@ -267,4 +265,21 @@ Commands:
 `auditjs ossi -q -j | tee auditjs-output.json`
 
 ### audit.js: CD/CI integration
+
+```text
+  sca-auditjs:
+    stage: test
+    image: node:lts-alpine3.13
+    script:
+      - apk add git
+      - git checkout master
+      - npm install -g auditjs
+      - npm install
+      - auditjs ossi -q -j | tee auditjs-output.json
+    artifacts:
+      paths: [auditjs-output.json]
+      when: always
+      expire_in: one week
+    allow_failure: true
+```
 
