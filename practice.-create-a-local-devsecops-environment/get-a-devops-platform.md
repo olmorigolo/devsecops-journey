@@ -4,6 +4,8 @@
 
 I recommend gitlab CI if you want to experiment how to integrate different tools into a CD/CI. Gitlab has a professional version, so the private installation is limited in features. Run a docker container as described here [https://docs.gitlab.com/omnibus/docker/](https://docs.gitlab.com/omnibus/docker/)
 
+Another good installation guide is available here: [https://oramind.com/private-cicd-using-gitlab-docker/](https://oramind.com/private-cicd-using-gitlab-docker/)
+
 I use docker-compose and the following dockerfile
 
 ```text
