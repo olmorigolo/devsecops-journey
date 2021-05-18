@@ -36,6 +36,7 @@
   * [System Compliance Analysis](practice.-create-a-local-devsecops-environment/system-compliance-analysis.md)
   * [Vulnerability Analysis](practice.-create-a-local-devsecops-environment/vulnerability-analysis.md)
 * [The Security Development Lifecycle \(SDL\)](the-security-development-lifecycle-sdl.md)
+* [Getting started with kubernetes](getting-started-with-kubernetes.md)
 
 ## Learning notes <a id="notes"></a>
 
