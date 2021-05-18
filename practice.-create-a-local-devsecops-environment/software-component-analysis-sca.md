@@ -341,9 +341,9 @@ sca-ruby-with-bundler:
     - echo 'Ruby version is'
     - cat Gemfile | grep "ruby"    # see ruby version
     - echo 'Installing bundler-audit sca tool...'
+    - export PATH="~/.gem/ruby/2.6.0/bin:$PATH" # add ruby to the path
     - gem install --user-install bundler-audit
-    - export PATH="~/.gem/ruby/2.6.0/bin/:$PATH"
-    - bundle-audit check --format json --output bundle-audit.json
+    - bundle-audit check --format json --output bundle-output.json # run check 
   artifacts:
     paths: [bundle-output.json]
     when: always
