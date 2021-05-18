@@ -283,3 +283,39 @@ Commands:
     allow_failure: true
 ```
 
+### bundle-audit: usage
+
+ls into the project folder of your ruby project and check the ruby version
+
+cat Gemfile \| grep "ruby"
+
+Now install it according to your system. Don't forget to add ruby on your path with 
+
+```text
+/webapp# export PATH="/root/.rbenv/versions/2.6.5/bin:$PATH"
+/webapp# ruby --version
+ruby 2.6.5p114 (2019-10-01 revision 67812) [x86_64-linux]
+```
+
+Then install the gem for bundle-audit
+
+```text
+gem install --user-install bundler-audit
+```
+
+Add bundle-audit to the path
+
+```text
+export PATH="~/.gem/ruby/2.6.0/bin/:$PATH"
+```
+
+Use it with 
+
+```text
+bundle-audit check | tee bundle-output.json
+```
+
+### bundle-audit CD/CI integration
+
+
+
