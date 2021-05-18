@@ -312,10 +312,48 @@ export PATH="~/.gem/ruby/2.6.0/bin/:$PATH"
 Use it with 
 
 ```text
-bundle-audit check | tee bundle-output.json
+bundle-audit check --format json --output bundle-audit.json
 ```
 
-### bundle-audit CD/CI integration
+Ignore vulnerabilities with criticity high by adding `.bundler-audit.yaml` to the repo
+
+```text
+---
+ignore:
+  - Criticality: High
+  - CVE: xxxx-xxx
+```
+
+
+
+### bundler-audit CD/CI integration
+
+find the ruby version of your app and get a corresponding docker image on docker hub
+
+```text
+sca-ruby-with-bundler:
+  stage: test
+  image: ruby:2.6.5-alpine3.11
+  script:
+    - apk add git
+    - echo 'Checking out master branch ...'
+    - git checkout master
+    - echo 'Ruby version is'
+    - cat Gemfile | grep "ruby"    # see ruby version
+    - echo 'Installing bundler-audit sca tool...'
+    - gem install --user-install bundler-audit
+    - export PATH="~/.gem/ruby/2.6.0/bin/:$PATH"
+    - bundle-audit check --format json --output bundle-audit.json
+  artifacts:
+    paths: [bundle-output.json]
+    when: always
+    expire_in: one week
+  allow_failure: true
+```
+
+
+
+
 
 
 
