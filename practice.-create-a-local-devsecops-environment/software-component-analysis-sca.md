@@ -285,7 +285,7 @@ Commands:
 
 ### bundle-audit: usage
 
-ls into the project folder of your ruby project and check the ruby version
+ls into the project folder of your ruby project and check the ruby version. You can use this app for testing `git clone https://gitlab.practical-devsecops.training/pdso/rails.git webapp`
 
 cat Gemfile \| grep "ruby"
 
