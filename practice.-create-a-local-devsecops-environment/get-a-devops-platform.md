@@ -16,7 +16,7 @@ Install your own gitlab server on a virtual machine as described in [https://emb
 
 Register your local machine as a runner and run it with `gitlab-runner --debug run`
 
-to see if it connects to the server.
+to see if it connects to the server. Why should you register your local computer as a runner? If your build steps run locally, then they will also run successully with your local gitlab runner. Don't forget to try everything before putting it into a pipeline. Also test if your docker container runs sucessfully on you local machien before setting it up in the pipeline.
 
 Thank you embedded inventor for the detailed tutorial!
 
