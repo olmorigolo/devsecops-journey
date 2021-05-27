@@ -6,6 +6,16 @@ I recommend gitlab CI if you want to experiment how to integrate different tools
 
 Before installing anything on your local machine or VM check the system requirements here [https://docs.gitlab.com/ee/install/requirements.html](https://docs.gitlab.com/ee/install/requirements.html). 
 
+### Gitlab-ci on a virtual machine
+
+Install your own gitlab server on a virtual machine as described in [https://embeddedinventor.com/complete-guide-to-setting-up-gitlab-locally-on-mac/\#STEP4\_Create\_and\_edit\_gitlab\_ciyml\_to\_run\_the\_above\_script](https://embeddedinventor.com/complete-guide-to-setting-up-gitlab-locally-on-mac/#STEP4_Create_and_edit_gitlab_ciyml_to_run_the_above_script)
+
+Register your local machine as a runner and run it with `gitlab-runner --debug run`
+
+to see if it connects to the server
+
+### Gitlab-ci with docker-compose
+
 I use docker-compose and the following dockerfile to create the gitlab web instance as well as a docker runner on the same machine.
 
 ```text
