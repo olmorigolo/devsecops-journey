@@ -20,9 +20,13 @@ Download and set-up a local jenkins with docker.
 
 {% embed url="https://www.jenkins.io/doc/book/installing/docker/" %}
 
-### Gitlabs
+### Gitlab
 
-TODO
+Install your own gitlab server on a virtual machine as described in [https://embeddedinventor.com/complete-guide-to-setting-up-gitlab-locally-on-mac/\#STEP4\_Create\_and\_edit\_gitlab\_ciyml\_to\_run\_the\_above\_script](https://embeddedinventor.com/complete-guide-to-setting-up-gitlab-locally-on-mac/#STEP4_Create_and_edit_gitlab_ciyml_to_run_the_above_script)
+
+Register your local machine as a runner and run it with `gitlab-runner --debug run` 
+
+to see if it connects to the server
 
 ## Create your build pipeline
 
