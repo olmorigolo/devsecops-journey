@@ -8,11 +8,17 @@ Before installing anything on your local machine or VM check the system requirem
 
 ### Gitlab-ci on a virtual machine
 
+{% hint style="success" %}
+Recommended solution
+{% endhint %}
+
 Install your own gitlab server on a virtual machine as described in [https://embeddedinventor.com/complete-guide-to-setting-up-gitlab-locally-on-mac/\#STEP4\_Create\_and\_edit\_gitlab\_ciyml\_to\_run\_the\_above\_script](https://embeddedinventor.com/complete-guide-to-setting-up-gitlab-locally-on-mac/#STEP4_Create_and_edit_gitlab_ciyml_to_run_the_above_script)
 
 Register your local machine as a runner and run it with `gitlab-runner --debug run`
 
-to see if it connects to the server
+to see if it connects to the server.
+
+Thank you embedded inventor for the detailed tutorial!
 
 ### Gitlab-ci with docker-compose
 
