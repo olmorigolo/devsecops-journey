@@ -48,6 +48,41 @@ sast:
   allow_failure: true
 ```
 
+### breakman
+
+You need ruby running on your host machine. Update your system and  install Ruby with the following command.
+
+`apt update && apt install ruby-full -y`
+
+Install brakeman
+
+`gem install brakeman`
+
+Run the scanner and output the results into  a json file
+
+`brakeman -f json | tee result.json`
+
+You can add a ignorefile to the scan by creating a file with the extension .ignore
+
+`nano brakeman.ignore`
+
+Example content:
+
+```text
+{
+    "ignored_warnings": [
+        {
+          "fingerprint": "febb21e45b226bb6bcdc23031091394a3ed80c76357f66b1f348844a7626f4df",
+          "note": "ignore XSS"
+        }
+    ]
+}
+```
+
+run the scan with the ignorefile:
+
+ `brakeman -f json -i brakeman.ignore | tee result.json`
+
 ### Secret scanners
 
 Secret scanners will analyse the code in search for credentials. Types of secret scanners are
