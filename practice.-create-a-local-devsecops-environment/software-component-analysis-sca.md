@@ -351,6 +351,53 @@ sca-ruby-with-bundler:
   allow_failure: true
 ```
 
+### Synk
+
+Synk is a dependency analysis tool for many languages: Ruby, Python, NodeJS, Java, Go, .NET. You need to register an account in order to use it.
+
+Download sync at [https://github.com/snyk/sny](https://github.com/snyk/snyk.)k and install it. Create an account and an auth token.
+
+```text
+snyk auth YOUR_API_TOKEN_HERE
+```
+
+You can store it in the environment on your machine with
+
+```text
+export SNYK_TOKEN=YOUR_TOKEN_HERE
+```
+
+In your app folder, install the dependencies and then run the scan
+
+```text
+npm install
+snyk test --json . > output.json
+```
+
+
+
+### Synk CD/CI integration
+
+```text
+
+oast-snyk:
+  stage: test
+  image: node:latest
+  before_script:
+    - wget -O snyk https://github.com/snyk/snyk/releases/download/v1.566.0/snyk-linux
+    - chmod +x snyk
+    - mv snyk /usr/local/bin/
+  script:
+    - npm install
+    - snyk test --json > snyk-results.json
+  artifacts:
+    paths:
+    - snyk-results.json
+  allow_failure: true #<--- allow the build to fail but don't mark it as such
+```
+
+
+
 
 
 
