@@ -134,3 +134,89 @@ git-secrets:
   allow_failure: true   #We don't want to fail jobs in maturity level 1 and 2, lots of false positives
 ```
 
+### GoSec
+
+GoSec allows tatic analysis scans on Golang code. The project is located at [https://github.com/securego/gosec](https://github.com/securego/gosec)
+
+Test the tool on a golang repo
+
+```text
+git clone https://gitlab.practical-devsecops.training/pdso/golang.git webapp
+```
+
+Install Go on your machine
+
+If you don't have go on your machine, make it ready with by installing go by following the instructions at [https://golang.org/doc/install](https://golang.org/doc/install)
+
+You should also set the following environment variables
+
+```text
+export GOROOT=/usr/local/go
+export GOPATH=$HOME/go
+export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+```
+
+Install Gosec
+
+```text
+go get github.com/securego/gosec/v2/cmd/gosec
+```
+
+Run your first scan with
+
+```text
+gosec ./...
+```
+
+You can ignore findings with
+
+```text
+gosec -exclude=G104 ./...
+```
+
+
+
+### njsscan
+
+A tool that runs static analysis scan on a NodeJS code. Download and install it from the project at [https://github.com/ajinabraham/njsscan](https://github.com/ajinabraham/njsscan) or install it directly using the python installer
+
+```text
+pip install njsscan
+```
+
+Run the scanner
+
+```text
+njsscan --json -o output.json /myNodeJsProject
+```
+
+### pylint
+
+A tool that runs code quality scans on Python code.
+
+Install it with pip
+
+```text
+pip3 install pylint
+```
+
+Run the scanner on .py files in your project folder called myPythonApp
+
+```text
+pylint myPythonApp/*.py
+```
+
+You can output results as json to a file like this
+
+```text
+pylint myPythonApp/*.py -f json | tee output.json
+```
+
+Reduce False Positive
+
+The `--generate-rcfile` option will generate a commented configuration file on standard output according to the current configuration and exit. Store the content into .pylintrc which is also your ignore file.
+
+### Semgrep
+
+### SonarQube
+
