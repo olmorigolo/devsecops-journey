@@ -218,5 +218,19 @@ The `--generate-rcfile` option will generate a commented configuration file on s
 
 ### Semgrep
 
+Semgrep is a open-source static analysis tool. Rules are easy to understand.
+
+Install it with `pip3 install semgrep`
+
+The tool has four categories of parameters.
+
+positional arguments: The target of file or directory that we want to scan optional arguments : many optional arguments like include/exclude file/dir to scan 
+
+config: configuration to scan the code. 
+
+output: The result output.
+
+
+
 ### SonarQube
 
