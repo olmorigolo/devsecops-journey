@@ -1,4 +1,0 @@
-# Compliance as code
-
-Inspec
-
