@@ -14,9 +14,7 @@ Recommended solution
 
 Install your own gitlab server on a virtual machine as described in [https://embeddedinventor.com/complete-guide-to-setting-up-gitlab-locally-on-mac/\#STEP4\_Create\_and\_edit\_gitlab\_ciyml\_to\_run\_the\_above\_script](https://embeddedinventor.com/complete-guide-to-setting-up-gitlab-locally-on-mac/#STEP4_Create_and_edit_gitlab_ciyml_to_run_the_above_script)
 
-Register your local machine as a runner and run it with `gitlab-runner --debug run`
-
-to see if it connects to the server. Why should you register your local computer as a runner? If your build steps run locally, then they will also run successully with your local gitlab runner. Don't forget to try everything before putting it into a pipeline. Also test if your docker container runs sucessfully on you local machien before setting it up in the pipeline.
+Register your local machine as a runner and run it with `gitlab-runner --debug run` to see if it connects to the server. Why should you register your local computer as a runner? If your build steps run locally, then they will also run successfully with your local gitlab runner. Don't forget to try everything before putting it into a pipeline. Also test if your docker container runs sucessfully on you local machien before setting it up in the pipeline.
 
 Thank you embedded inventor for the detailed tutorial!
 
