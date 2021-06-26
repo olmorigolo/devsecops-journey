@@ -1,12 +1,6 @@
 # Infrastructure as code
 
-## **Platforms**
-
-## **Definition tools**
-
-## **Configuration Management tools**
-
-### **Ansible**
+## **Ansible**
 
 Manages different systems that define a infrastructure. These systems can be a jenkins, git server, a container, a webserver. Ansible uses ssh to communicate with these systems.
 
@@ -40,7 +34,7 @@ Contains instructions to configure a system/a node
 
 All systems that are managed by ansible are regrouped into the inventory. 
 
-### Ansible challanges
+### Ansible challenges
 
 ssh  key management, monitoring
 
