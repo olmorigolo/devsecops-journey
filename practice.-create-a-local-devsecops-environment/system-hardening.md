@@ -32,7 +32,7 @@ EOL
 In order to run ansible on these machinesvia SSH, we need to put them in our know-hosts list
 
 ```text
-sh-keyscan -t rsa  staging-ourcompany-app prod-ourcompany-app >> ~/.ssh/known_hosts
+ssh-keyscan -t rsa  staging-ourcompany-app prod-ourcompany-app >> ~/.ssh/known_hosts
 ```
 
  Check the uptime of the production system with ansible
