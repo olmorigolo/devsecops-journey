@@ -24,7 +24,9 @@ Last but not least, another online learning platfom [https://www.edx.org/](https
 
 I am new to it, but this academy is awesome. They structured the labs into different attack vectors. Lab access is via browser. Access is around 250$/year. Visit [https://www.pentesteracademy.com/onlinelabs](https://www.pentesteracademy.com/onlinelabs)
 
-They have good labs for testing container security. Browser-based.
+You can earn badges for some of the labs played.They now offer bootcamps in a price range between 300-500$, time 4-5 weeks. 
+
+They have good labs for testing container security. Browser-based. 
 
 ### Online labs for common security tools
 
