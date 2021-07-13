@@ -2,8 +2,8 @@
 
 * [Getting Started](README.md)
 * [Training Guide](learn.md)
+* [Vulnerable Web Apps](vulnerable-web-apps.md)
 * [Building a DevSecOps CD/CI Pipeline](practice.-create-a-local-devsecops-environment/README.md)
-  * [Vulnerable Web Apps](practice.-create-a-local-devsecops-environment/vulnerable-web-apps.md)
   * [Self-hosted DevOps CD/CI platforms](practice.-create-a-local-devsecops-environment/get-a-devops-platform.md)
   * [Software Component Analysis \(SCA\)](practice.-create-a-local-devsecops-environment/software-component-analysis-sca.md)
   * [Static Application Security Testing \(SAST\)](practice.-create-a-local-devsecops-environment/static-application-security-testing-sast.md)
@@ -43,4 +43,5 @@
 * [Ready-to-use and train DevSecOps CD/CI Pipeline](tbd/ready-to-use-and-train-devsecops-cd-ci-pipeline.md)
 * [Networking Basics](tbd/networking.md)
 * [The Security Development Lifecycle \(SDL\)](tbd/the-security-development-lifecycle-sdl.md)
+* [Gitlab-ci with docker-compose](tbd/gitlab-ci-with-docker-compose.md)
 

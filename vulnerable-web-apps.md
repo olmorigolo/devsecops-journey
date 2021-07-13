@@ -26,6 +26,10 @@ Damn Vulnerable Web App. To get it on your machine I recommend to use the docker
 $ docker run --rm -it -p 80:80 vulnerables/web-dvwa
 ```
 
+bWAPP - buggy web application
+
+[http://www.itsecgames.com/](http://www.itsecgames.com/) has over 100 vulnerabilities
+
 ## Javascript
 
 Juice Shop is written in Node.js, Express and Angular. Get it on [https://github.com/bkimminich/juice-shop](https://github.com/bkimminich/juice-shop)

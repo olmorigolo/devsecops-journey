@@ -1,12 +1,32 @@
+---
+description: What headhunters and company search for
+---
+
 # Career notes
 
-Certifications in Job offers: 
+Important terms in Job offers.
 
+Most popular tools of the trade
 
+* nmap
+* wireshark
+* owasp zap
+* Metasploit
+* burbsuite
+* nessus
 
-security tools: Metasploit, Nessus or other vulnerability scanners, port scanners
+Programming languages in demand
 
-Programming languages: Python, C, Java, Shell
+* Python
+* Java
+* Shellscript
 
-networking, reverse engineering
+Keywords
+
+* vulnerability scanner
+* network scanning
+* networking
+* reverse engineering
+
+Certifications:
 
