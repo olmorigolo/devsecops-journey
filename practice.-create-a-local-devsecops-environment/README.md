@@ -8,7 +8,7 @@ description: A practical guide on building a pipeline with security tools
 
 Get one of the vulnerable web apps from the Vulnerable Web Apps Page on your machine.
 
-{% page-ref page="../vulnerable-web-apps.md" %}
+{% page-ref page="../self-hosted-training-lab/vulnerable-web-apps.md" %}
 
 ## Step \#2 Get a CD/CI build server
 
