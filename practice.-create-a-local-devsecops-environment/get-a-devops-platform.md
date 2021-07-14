@@ -57,7 +57,7 @@ docker run -d --name gitlab-runner --restart always \
 
 1. Create a namespace \(group\) and call it vulnlab, create a project in your gitlab instance with name dsvw
 2. Read your public ssh key and enter it in the ssh key sections of your user in gitlab `cat ~/.ssh/id_rsa.pub`
-3. Clone a vulnerable app from github `git clone` [`https://github.com/stamparm/DSVW.git`](https://github.com/stamparm/DSVW.git)\`\`
+3. Clone a vulnerable app from github \(see [Vulnerable Web Apps](../web-application-security-testing/self-hosted-training-lab/vulnerable-web-apps.md)\), for instance `git clone` [`https://github.com/stamparm/DSVW.git`](https://github.com/stamparm/DSVW.git) ``
 4. Push it to you local gitlab instance `git push --set-upstream git@localhost:vulnlab/dsvw.git`
 
 \*\*\*\*🏁 **Start building your pipeline!**

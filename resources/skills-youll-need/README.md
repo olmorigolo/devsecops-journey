@@ -18,10 +18,6 @@ description: Skills coverage for a DevSecOps by domain.
 
 ## Security
 
-{% page-ref page="pentesting/" %}
-
-{% page-ref page="vulnerability-score-cvss.md" %}
-
 {% page-ref page="rbac-abac.md" %}
 
 

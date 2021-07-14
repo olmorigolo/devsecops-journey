@@ -2,9 +2,13 @@
 
 * [Getting Started](README.md)
 * [Training Guide](learn.md)
-* [Self-hosted Training Lab](self-hosted-training-lab/README.md)
-  * [Vulnerable Web Apps](self-hosted-training-lab/vulnerable-web-apps.md)
-* [Web Application Security Testing](web-application-security-testing.md)
+* [Web Application Security Testing](web-application-security-testing/README.md)
+  * [Self-hosted Training Lab](web-application-security-testing/self-hosted-training-lab/README.md)
+    * [Vulnerable Web Apps](web-application-security-testing/self-hosted-training-lab/vulnerable-web-apps.md)
+  * [Footprinting tools](web-application-security-testing/untitled.md)
+  * [Scanning networks](web-application-security-testing/untitled-1.md)
+  * [Enumeration](web-application-security-testing/enumeration.md)
+  * [Vulnerability assessment](web-application-security-testing/vulnerability-assessment.md)
 * [Building a DevSecOps CD/CI Pipeline](practice.-create-a-local-devsecops-environment/README.md)
   * [Self-hosted DevOps CD/CI platforms](practice.-create-a-local-devsecops-environment/get-a-devops-platform.md)
   * [Software Component Analysis \(SCA\)](practice.-create-a-local-devsecops-environment/software-component-analysis-sca.md)
@@ -21,12 +25,6 @@
 ## Resources
 
 * [Skill Knowledge Base](resources/skills-youll-need/README.md)
-  * [Vulnerability Score CVSS](resources/skills-youll-need/vulnerability-score-cvss.md)
-  * [The OWASP Offensive Web Testing Framework](resources/skills-youll-need/practice.-the-owasp-offensive-web-testing-framework.md)
-  * [Pentesting](resources/skills-youll-need/pentesting/README.md)
-    * [Vulnerability assessment](resources/skills-youll-need/pentesting/vulnerability-assessment.md)
-    * [Scanning networks](resources/skills-youll-need/pentesting/untitled.md)
-    * [Enumeration](resources/skills-youll-need/pentesting/enumeration.md)
   * [RBAC / ABAC](resources/skills-youll-need/rbac-abac.md)
   * [Python Programming](resources/skills-youll-need/python-programming.md)
   * [Infrastructure as code](resources/skills-youll-need/infrastructure-as-code.md)
@@ -36,7 +34,6 @@
 * [Literature](resources/reads..md)
 * [Useful Tool Tutorials](resources/useful-tool-tutorials.md)
 * [Useful Online Tools](resources/useful-online-tools.md)
-* [Footprinting tools](resources/untitled.md)
 * [Exploits](resources/exploits.md)
 
 ## Unsorted <a id="tbd"></a>
