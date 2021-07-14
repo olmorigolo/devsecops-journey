@@ -18,6 +18,8 @@ description: Skills coverage for a DevSecOps by domain.
 
 ## Security
 
+{% page-ref page="../../web-application-security-testing/" %}
+
 {% page-ref page="rbac-abac.md" %}
 
 
