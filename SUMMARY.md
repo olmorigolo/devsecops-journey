@@ -4,6 +4,7 @@
 * [Training Guide](learn.md)
 * [Self-hosted Training Lab](self-hosted-training-lab/README.md)
   * [Vulnerable Web Apps](self-hosted-training-lab/vulnerable-web-apps.md)
+* [Web Application Security Testing](web-application-security-testing.md)
 * [Building a DevSecOps CD/CI Pipeline](practice.-create-a-local-devsecops-environment/README.md)
   * [Self-hosted DevOps CD/CI platforms](practice.-create-a-local-devsecops-environment/get-a-devops-platform.md)
   * [Software Component Analysis \(SCA\)](practice.-create-a-local-devsecops-environment/software-component-analysis-sca.md)
