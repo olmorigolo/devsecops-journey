@@ -28,7 +28,9 @@ Fall under SAST. List available here [https://analysis-tools.dev/](https://analy
 
 We do not want to fail the builds in **DevSecOps Maturity Levels 1 and 2**. If a security tool fails a job, it won’t allow other DevOps jobs like release/deploy to run hence causing great distress to DevOps Team. Moreover, the security tools suffer from false positives. Failing a build on inaccurate data is a sure recipe for disaster. In gitlab pipelines one can use the **allow\_failure** tag to not fail the build even though the tool found security issues.
 
+{% hint style="success" %}
 Rule of thumb: only fail the build when **CVSS** score is lower than **7** and save the output preferably as **JSON** if available.
+{% endhint %}
 
 ### retire.js: usage
 
