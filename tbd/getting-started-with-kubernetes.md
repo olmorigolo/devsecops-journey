@@ -87,7 +87,7 @@ We need the api server IP address:
 $ APISERVER=$(kubectl config view | grep https | cut -f 2- -d ":" | tr -d " ")
 ```
 
-verify that these two command return the same url:
+Verify that these two command return the same url then run the curl command.
 
 ```text
 $ echo $APISERVER
@@ -97,9 +97,7 @@ $ kubectl cluster-info
 Kubernetes control plane is running at https://192.168.64.2:8443
 ```
 
-
-
-##  Minikube addons
+###  Minikube addons
 
 list the available addons with
 
@@ -143,7 +141,7 @@ install them with `minikube addons enable <addon-name>`
 
 ## Kubernetes ecosystem
 
-**etcd:** a key-value store.n Only the API Server is able to communicate with the etcd data store.
+**etcd:** a key-value store. Only the API Server is able to communicate with the etcd data store.
 
 **etcdctl:** command line tool for the key-value store.
 
@@ -155,10 +153,6 @@ install them with `minikube addons enable <addon-name>`
 
 **kube-proxy** is the network agent which runs on each node responsible for dynamic updates and maintenance of all networking rules on the node.
 
-**pod**: groups depending worker nodes
-
-**cluster**: groups pods
-
 Kubernetes can be installed using different cluster configurations. Installation types are:
 
 * * * **All-in-One Single-Node Installation** In this setup, all the master and worker components are installed and running on a single-node. While it is useful for learning, development, and testing, it should not be used in production. Minikube is an installation tool originally aimed at single-node cluster installations.
@@ -169,5 +163,48 @@ Kubernetes can be installed using different cluster configurations. Installation
 
 As the Kubernetes cluster's complexity grows, so does its hardware and resources requirements. While we can deploy Kubernetes on a single host for learning, development, and possibly testing purposes, the community recommends multi-host environments that support High-Availability control plane setups and multiple worker nodes for client workload. 
 
-\*\*\*\*
+### **Kubernetes object model**
+
+The objects describe:
+
+* which apps are running
+* to which nodes they are deployed
+* the resources they consume
+* the policies attahced to them \(like fault tolerance, restart/upgrade policy\)
+
+**Pods:** holds conteners \(apps\), either a single app or multi-container.  They are the smallest unit in kubernetes.
+
+**Cluster**: groups pods together
+
+**Label:** holds meta information of a pod as a key-value pair.
+
+**ReplicationControllers:** ensures that a specified number of pod replicas are running at any given time. Is a pod get killed or has a disfunction, the replica set will ask for a new replicate to ensure the desired amount of pods are always available.
+
+**Deployment**: provides declarative updates to Pods and ReplicaSets.
+
+**namespaces**: groups different nodes together in a secure group. Namespaces are one of the most desired features of Kubernetes. By default the following namespaces are created:
+
+list all namespaces
+
+```text
+$ kubectl get namespaces
+NAME                   STATUS   AGE
+default                Active   3h37m
+kube-node-lease        Active   3h37m
+kube-public            Active   3h37m
+kube-system            Active   3h37m
+kubernetes-dashboard   Active   95m
+```
+
+Every pod created without a specific namespace will be assigned to default. kube-system holds the kubernetes control agents, kube-public is accessible by everyone, kube-node-lease holds nodes with heartbeat data.
+
+### Accessing kubernetes objects
+
+To access and manage Kubernetes resources or objects in the cluster, we need to access a specific API endpoint on the API server. Each access request goes through the following access control stages:
+
+* **Authentication:** Logs in a user.
+* **Authorization:** Authorizes the API requests submitted by the authenticated user.
+* **Admission Control:** Software modules that validate and/or modify user requests based.
+
+
 
