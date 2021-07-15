@@ -6,14 +6,14 @@ description: Maturity Model Level 3+4
 
 ## What is it?
 
-DAST tools analyse the running application, the code at run time. It takes much time. DAST tools are most effective when a lot of spidering has been done on the application under test. Thus the more spidering, the better results. But spidering is a process thta takes time! DAST tools can be run on 
+DAST tools analyse the running application, the code at run time. It takes much time. DAST tools are most effective when a lot of spidering has been done on the application under test. Thus the more spidering, the better results. But spidering is a process that takes time! DAST tools can be run on 
 
 * the application \(i.e. with the zap proxy tool\)
 * configuration
 * infrastructure description \(ansible files\)
 * docker containers \(docker benchmark\)
 
-When integrating the tools in a CD/CI pipeline, each attack vector should be considered seperately. Thus we would create a job in the build pipeline for each specific attack vector. Cover at least the OWASP top ten attack vectors step by step, one job at a time.
+When integrating the tools in a CD/CI pipeline, each attack vector should be considered separately. Thus we would create a job in the build pipeline for each specific attack vector. Cover at least the OWASP top ten attack vectors step by step, one job at a time.
 
 ## The tools
 
