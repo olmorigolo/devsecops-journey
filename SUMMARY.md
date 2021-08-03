@@ -17,6 +17,7 @@
   * [System Hardening](practice.-create-a-local-devsecops-environment/system-hardening.md)
   * [System Compliance Analysis](practice.-create-a-local-devsecops-environment/system-compliance-analysis.md)
   * [Vulnerability Analysis](practice.-create-a-local-devsecops-environment/vulnerability-analysis.md)
+* [Cloud Computing](cloud-computing.md)
 
 ## Learning notes <a id="notes"></a>
 
