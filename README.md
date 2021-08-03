@@ -27,6 +27,8 @@ You should know basic unix commands, know how to configure different machines \(
 **Project**: grab a new machine and configure it with only the tools you need for your work. Install Vm's and learn unix commands. Create and monitor your home IoT network.
 {% endhint %}
 
+**If you have a Bachelor's or Master's Degree in Computer Science or related field, you should be familiar with the basics. You might consider to refresh some tooling knowledge or some theory like the OSI network model.**
+
 ### **Software Development Basics**
 
 Programming skills are important. You should at least know one interpreter language like python very well. Java, JS, Python, PHP, any language skill is good. Very important know the tools. git, IDE's, Database tools etc.
@@ -35,17 +37,25 @@ Programming skills are important. You should at least know one interpreter langu
 **Project**: create an app in python or javascript \(nodejs\). Try a free coding project.
 {% endhint %}
 
+**You should understand simple concepts of creating software especially web applications. If you are not keen or o not have time to develop something on your own, you could consider watching the process of developing a whole app on youtube or a twitch channel.**
+
 ### **Operation Basics**
 
 You should know how the software development lifecycle of bigger projects look like. Steps that are involved, tools. You need to understand container and cloud computing. You should know how to use docker and cloud services such as Google Compute Engine, Microsoft Azure or OpenStack. You should at least know the basics of container ochestration tools like kubernetes. You should be familiar with infrastructure automation tools like chef, puppet, terraform and ansible, compliance tools like Chef  Inspec or cloud compliance tools such as fugue. 
 
 {% hint style="info" %}
-**Project idea**: dockerize your app. Use at least one infrastructure automation tool. Set up your own CD/CI server and add your project to it. Create a build pipeline for your app.
+**Project idea**: dockerize your app. Use at least one infrastructure automation tool. Set up your own CD/CI server and add your project to it. Create a build pipeline for your app. ****Play with container orchestration tools like minikube, try out a free tier account on one of the biggest cloud computing providers AWS, google or MS Azure.
 {% endhint %}
+
+**You should understand the architecture and the different layers of cloud computing. You should be able to relate popular tools to each component within the architecture.**
+
+### **Testing**
+
+
 
 ### **Security**
 
-Understand basic security rules and best practices. How to secure your internal LAN, configure iptables.  Know the OWASP Maturity Model and security recommendations. You should know in detail how to secure web applications and furthermore how to attack web applications.
+Understand fundamental security rules and best practices. How to secure your internal LAN, configure iptables. You should know how to secure web applications and furthermore how to attack them**.** Know the OWASP Maturity Model and security recommendations. 
 
 {% hint style="info" %}
 **Project ideas**: secure your home lan, secure your devops pipeline, check your project for insecure code, take counter measures against ethical hacking \(check the internet for your name, delete data\), keep only useful internet accounts, change all passwords, use a password manager for all of your passwords. 
