@@ -65,10 +65,6 @@ Understand fundamental security rules and best practices. How to secure your int
 
 Unless the culture of a whole teams isn't agile enough, you will never be able to make everything as code. If you work in a big team suggest to get a agile facilitator who could assist you in the process of creating a transparent, self-managed and highly responsible culture in your team.
 
-
-
-{% page-ref page="resources/skills-youll-need/" %}
-
 {% page-ref page="learn.md" %}
 
 ## As a company, how can I implement a DevSecOps approach?
