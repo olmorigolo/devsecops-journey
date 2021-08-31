@@ -18,7 +18,11 @@ The DevSecOps Fundamentals are really good and lets you create your own pipeline
 
 #### edx
 
-Last but not least, another online learning platfom [https://www.edx.org/](https://www.edx.org/) is well known because they partner up with popular universities such as harvard, berkeley, or the MIT. Search for the keyword edx on linkedin, you'll see it's wideley spread. I don't have experience with it yet.
+Last but not least, another online learning platfom [https://www.edx.org/](https://www.edx.org/) is well known because they partner up with popular universities such as harvard, berkeley, or the MIT. Search for the keyword edx on linkedin, you'll see it's wideley spread. The courses are based on a lot of text and some videos. The content quality really depends on the lecturer and publisher. There are different universities providing courses on this platform. Some are outdated. I did some Introductions to kubernetes from the linux foundation on this platform. It was a lot to read but included lot's of hands-on material that I could just copy on my own personal computer.
+
+**EC-Council Code Red**
+
+Another course library from one of the biggest IT Security certification company, EC-Council. I didn't try yet but the content looks promosing. More on [https://codered.eccouncil.org/](https://codered.eccouncil.org/)
 
 #### pentester academy
 
@@ -36,7 +40,7 @@ In addition to the online classes, popular tools have their own online labs. Bur
 
 Become fluent in Linux basic commands with the wargame "bandit" at [https://overthewire.org/wargames](https://overthewire.org/wargames). There are also different older hacking games to play. Don't forget to support the platform.
 
-If you are stuck, find the write-up for each level here: [https://hackmethod.com/overthewire-bandit/](https://hackmethod.com/overthewire-bandit/) I am at level 24 so far, but my solution is exactly the one from the write-up and doesn't work. So there is a chance that the game is broken. 
+If you are stuck, find the write-up for each level here: [https://hackmethod.com/overthewire-bandit/](https://hackmethod.com/overthewire-bandit/) I stuck at level 24 and I compared my solution with the one from the write-up and they are the same.  It still doesn't work. So there is a chance that the game is broken. 
 
 #### CTF's / Capture the Flags and online hacking events
 
