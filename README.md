@@ -51,7 +51,7 @@ You should know how the software development lifecycle of bigger projects look l
 
 ### **Testing**
 
-
+You should know what the testing pyramid is. If you only unit-test your own application, this is not sufficient but can help in understanding the idea of setting up a tes. Understanding of integration tests and mocks is a good foundation. Testing is a complex task when it involves many different components/systems and technologies. You should be aware of this. 
 
 ### **Security**
 
