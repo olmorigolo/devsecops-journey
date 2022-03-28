@@ -8,15 +8,15 @@ description: Maturity Level 1-4
 
 ## ansible
 
-Ansible is a tool for automation of configurations and deployments. Scripts are written in yaml files as playbooks. As a Security tool we can use ansible to apply OS updates, service packs, and patches automatically; remove unnecessary drivers, file sharing, libraries, software, services, and functionality. These tasks are part of system hardening. 
+Ansible is a tool for automation of configurations and deployments. Scripts are written in yaml files as playbooks. As a Security tool we can use ansible to apply OS updates, service packs, and patches automatically; remove unnecessary drivers, file sharing, libraries, software, services, and functionality. These tasks are part of system hardening.&#x20;
 
-Installation 
+Installation&#x20;
 
 `pip3 install ansible==2.10.4 ansible-lint==4.3.7`
 
 create an inventory file
 
-```text
+```
 cat > inventory.ini <<EOL
 
 # Our Company App Inventory
@@ -31,31 +31,31 @@ EOL
 
 In order to run ansible on these machinesvia SSH, we need to put them in our know-hosts list
 
-```text
+```
 ssh-keyscan -t rsa  staging-ourcompany-app prod-ourcompany-app >> ~/.ssh/known_hosts
 ```
 
- Check the uptime of the production system with ansible
+&#x20;Check the uptime of the production system with ansible
 
-`ansible -i inventory.ini` **`prod`** `-m` **`shell`** `-a "uptime"`
+`ansible -i inventory.ini`` `**`prod`**` ``-m`` `**`shell`**` ``-a "uptime"`
 
 Install a service called "ntp" with ansible on the production machine:
 
-`ansible -i inventory.ini` **`prod`** `-m` **`apt`** `-a "name=ntp state=present"`
+`ansible -i inventory.ini`` `**`prod`**` ``-m`` `**`apt`**` ``-a "name=ntp state=present"`
 
 ### Ad-hoc commands
 
 Which version of bash is running on my machines?
 
-`ansible -i inventory.ini` **`all`** `-m` **`command`** `-a "bash --version"`
+`ansible -i inventory.ini`` `**`all`**` ``-m`` `**`command`**` ``-a "bash --version"`
 
 Get all parameters and vars of your inventory
 
 `ansible -i inventory.ini all -m setup`
 
-copy a file from executing machine to remote hosts 
+copy a file from executing machine to remote hosts&#x20;
 
-```text
+```
 ansible -i inventory.ini machinename -m copy -a "src=notes.txt dest=notes.txt"
 ```
 
@@ -67,7 +67,7 @@ ansible -i inventory.ini machinename -m copy -a "src=notes.txt dest=notes.txt"
 
 If nginx is installed, print nginx version to the terminal by using the msg module
 
-```text
+```
 ---
 - name: Get the version of nginx
   hosts: all
@@ -92,7 +92,7 @@ If nginx is installed, print nginx version to the terminal by using the msg modu
 
 On the machines, using `cat /etc/os-release` outputs the following data:
 
-```text
+```
 PRETTY_NAME="Kali GNU/Linux Rolling"
 NAME="Kali GNU/Linux"
 ID=kali
@@ -108,7 +108,7 @@ BUG_REPORT_URL="https://bugs.kali.org/"
 
 We can use this information and store it into a variable with `register: os_release`
 
-```text
+```
 ---
 - name: Simple playbook
   hosts: all
@@ -127,7 +127,5 @@ We can use this information and store it into a variable with `register: os_rele
 
 #### Conditionals
 
-```text
-
 ```
-
+```

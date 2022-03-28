@@ -1,6 +1,6 @@
-# Scanning networks
+# 2 Scanning
 
-## Tools
+## Tools to scan networks
 
 ### nmap
 
@@ -17,21 +17,21 @@ Common nmap Commands
 Common Hping Commands
 
 * ICMP Ping: hping3 -1 10.0.0.25
-* ACK scan on port 80: hping3 -A 10.0.0.25 -p 80 
-* UDP scan on port 80: hping3 -2 10.0.0.25 -p 80 
-* Collecting Initial Sequence Number: hping3 192.168.1.103 -Q -p 139 -s 
-* Firewalls and Time Stamps: hping3 -S 72.14.207.99 -p 80 --tcp-timestamp 
-* SYN scan on port 50-60: hping3 -8 50-60 -S 10.0.0.25 -V 
-* FIN, PUSH and URG scan on port 80: hping3 -F -P -U 10.0.0.25 -p 80 
-* Scan entire subnet for live host: hping3 -1 10.0.1.x --rand-dest -I eth0 
-* Intercept all traffic containing HTTP signature: hping3 -9 HTTP -I eth0 
+* ACK scan on port 80: hping3 -A 10.0.0.25 -p 80&#x20;
+* UDP scan on port 80: hping3 -2 10.0.0.25 -p 80&#x20;
+* Collecting Initial Sequence Number: hping3 192.168.1.103 -Q -p 139 -s&#x20;
+* Firewalls and Time Stamps: hping3 -S 72.14.207.99 -p 80 --tcp-timestamp&#x20;
+* SYN scan on port 50-60: hping3 -8 50-60 -S 10.0.0.25 -V&#x20;
+* FIN, PUSH and URG scan on port 80: hping3 -F -P -U 10.0.0.25 -p 80&#x20;
+* Scan entire subnet for live host: hping3 -1 10.0.1.x --rand-dest -I eth0&#x20;
+* Intercept all traffic containing HTTP signature: hping3 -9 HTTP -I eth0&#x20;
 * SYN flooding a victim: hping3 -S 192.168.1.1 -a 192.168.1.254 -p 22 --flood
 
 ## ICMP echo reply
 
-ICMP Ping for IP 10.0.0.23 with hping3 
+ICMP Ping for IP 10.0.0.23 with hping3&#x20;
 
-```text
+```
 $ hping3 -1 10.0.0.23
 ```
 
@@ -45,7 +45,5 @@ Type 0 : echo reply; Type 8: Echo; Type 11: Time exceeded for a datagram; **Type
 * 10 host comm admin prohibited
 * 13 comm admin prohibited
 
-\*\*\*\*
-
-
+****
 

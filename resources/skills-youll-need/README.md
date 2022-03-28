@@ -2,27 +2,35 @@
 description: Skills coverage for a DevSecOps by domain.
 ---
 
-# Skill Knowledge Base
+# IT Basics
 
 ## Basics
 
 ## Programming
 
-{% page-ref page="python-programming.md" %}
+{% content-ref url="python-programming.md" %}
+[python-programming.md](python-programming.md)
+{% endcontent-ref %}
 
 ## Operations
 
-{% page-ref page="containers/" %}
+{% content-ref url="containers/" %}
+[containers](containers/)
+{% endcontent-ref %}
 
-{% page-ref page="infrastructure-as-code.md" %}
+{% content-ref url="infrastructure-as-code.md" %}
+[infrastructure-as-code.md](infrastructure-as-code.md)
+{% endcontent-ref %}
 
 ## Security
 
-{% page-ref page="../../web-application-security-testing/" %}
+{% content-ref url="../../it-security-roles/web-application-security-testing/" %}
+[web-application-security-testing](../../it-security-roles/web-application-security-testing/)
+{% endcontent-ref %}
 
-{% page-ref page="rbac-abac.md" %}
-
-
+{% content-ref url="rbac-abac.md" %}
+[rbac-abac.md](rbac-abac.md)
+{% endcontent-ref %}
 
 
 

@@ -1,10 +1,14 @@
 # Gitlab-ci with docker-compose
 
+### OUTDATED DOESN'T WORK
+
+###
+
 ### Gitlab-ci with docker-compose
 
 I use docker-compose and the following dockerfile to create the gitlab web instance as well as a docker runner on the same machine.
 
-```text
+```
 version: '3.9'
 
 services:
@@ -52,7 +56,7 @@ networks:
 
 global variables are stored in a .env file:
 
-```text
+```
 INITIAL_ROOT_PASSWORD=supersecretpass
 INITIAL_RUNNER_TOKEN=o8Yesbgz5hPWVLQqxWF3
 GITLAB_HOME=/srv/gitlab
@@ -61,35 +65,35 @@ HOST_NAME=gitlab.example.com
 
 Run the file with
 
-```text
+```
 docker-compose up -d
 ```
 
-You can observe the status of your gitlab-web instance with 
+You can observe the status of your gitlab-web instance with&#x20;
 
-```text
+```
 docker-compose ps
 ```
 
-```text
+```
 docker logs -f gitlab-web
 ```
 
 If you run into configuration troubles you need to enter the container to make changes to the gitlab.rb file and call gitlab reconfigure
 
-```text
+```
 docker container exec -it gitlab-web /bin/bash
 $ vi /etc/gitlab/gitlab.rb
 ```
 
-Exit the container \(CTRL+D\) and check the logs with 
+Exit the container (CTRL+D) and check the logs with&#x20;
 
-```text
+```
 docker logs gitlab-web
 ```
 
 {% hint style="danger" %}
-Pay attention the fix to gitlab.rb is not permanent, reconfigure or restart the container will remove your change and you have to do it again. You need to put the correct configuration into the dockerfile at GITLAB\__OMNIBUS\__CONFIG 
+Pay attention the fix to gitlab.rb is not permanent, reconfigure or restart the container will remove your change and you have to do it again. You need to put the correct configuration into the dockerfile at GITLAB\__OMNIBUS\__CONFIG&#x20;
 {% endhint %}
 
 More
@@ -99,4 +103,3 @@ More
 Run a docker container as described here [https://docs.gitlab.com/omnibus/docker/](https://docs.gitlab.com/omnibus/docker/)
 
 Another good installation guide is available here: [https://oramind.com/private-cicd-using-gitlab-docker/](https://oramind.com/private-cicd-using-gitlab-docker/)
-

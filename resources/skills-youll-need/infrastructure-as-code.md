@@ -14,15 +14,15 @@ Hardening and Securing servers is often time-consuming, error-prone, non-portabl
 
 #### Modules
 
-Allow to control system components. Modules are executable libraries \(or scripts\)
+Allow to control system components. Modules are executable libraries (or scripts)
 
-#### Tasks 
+#### Tasks&#x20;
 
-Smallest entity in ansible. Install a package could be a task. 
+Smallest entity in ansible. Install a package could be a task.&#x20;
 
 #### Roles
 
-A role is a set of tasks to configure a host to serve a certain purpose like configuring a service. A ****role is an independent component which allows reuse of common configuration steps. It ****has to be used within a playbook.
+A role is a set of tasks to configure a host to serve a certain purpose like configuring a service. A **** role is an independent component which allows reuse of common configuration steps. It **** has to be used within a playbook.
 
 Roles are stored by an active community in ansible galaxy. Like docker hub where you can find community developed containers, you'll find preconfigured roles in galaxy.
 
@@ -32,19 +32,18 @@ Contains instructions to configure a system/a node
 
 #### Inventory
 
-All systems that are managed by ansible are regrouped into the inventory. 
+All systems that are managed by ansible are regrouped into the inventory.&#x20;
 
 ### Ansible challenges
 
 ssh  key management, monitoring
 
-### More 
+### More&#x20;
 
 [https://serversforhackers.com/s/ansible](https://serversforhackers.com/s/ansible)
 
 [https://www.youtube.com/watch?v=w8fOEEMqpOw](https://www.youtube.com/watch?v=w8fOEEMqpOw)
 
-[https://docs.ansible.com/ansible/latest/user\_guide/intro\_getting\_started.html](https://docs.ansible.com/ansible/latest/user_guide/intro_getting_started.html)
+[https://docs.ansible.com/ansible/latest/user\_guide/intro\_getting\_started.html](https://docs.ansible.com/ansible/latest/user\_guide/intro\_getting\_started.html)
 
 [https://www.tutorialspoint.com/ansible/index.htm](https://www.tutorialspoint.com/ansible/index.htm)
-

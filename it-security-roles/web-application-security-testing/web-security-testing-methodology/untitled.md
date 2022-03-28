@@ -1,4 +1,4 @@
-# Footprinting tools
+# 1 Footprinting
 
 ## Website Footprinting
 
@@ -8,26 +8,26 @@ mirror websites. More at [https://en.kali.tools/?p=443](https://en.kali.tools/?p
 
 Install on debian unix like kali:
 
-```text
+```
 $ apt-get install httrack webhttrack
 $ webhttrack
 ```
 
 Use the webhttrack GUI which is a browser GUI and you can select the options via your browser or the wizard for options:
 
-```text
+```
 $ webhttrack www.mysite.com --mirror-wizard
 ```
 
 The website should be copied into the default folder if not specified: home/username/websites/TheCopiedWebsite
 
-```text
+```
 $ sudo cp -r TheCopiedWebsite /var/www/html
 ```
 
 Then start your local apache web server
 
-```text
+```
 $ service apache2 status
 $ service apache2 start
 ```
@@ -84,11 +84,10 @@ SVR= Service location records
 
 PTR= Pointer records
 
-RP= Responsible Person record \(not in Switzerland\)
+RP= Responsible Person record (not in Switzerland)
 
 HInfo=Host Information
 
 
 
-![](../.gitbook/assets/image.png)
-
+![](../../../.gitbook/assets/image.png)
