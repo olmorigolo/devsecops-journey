@@ -26,7 +26,8 @@
       * [Vulnerability Analysis](it-security-roles/master/practice.-create-a-local-devsecops-environment/vulnerability-analysis.md)
     * [Ready-to-use and train DevSecOps CD/CI Pipeline](it-security-roles/master/ready-to-use-and-train-devsecops-cd-ci-pipeline.md)
   * [Chief Information Security Officer (CISO)](it-security-roles/chief-information-security-officer-ciso.md)
-  * [Digital Forensics Investigator](it-security-roles/digital-forensics-investigator.md)
+  * [Digital Forensics Investigator](it-security-roles/digital-forensics-investigator/README.md)
+    * [Forensics Methodology](it-security-roles/digital-forensics-investigator/forensics-methodology.md)
   * [Cloud Security Engineer](it-security-roles/cloud-computing/README.md)
     * [Getting started with kubernetes](it-security-roles/cloud-computing/getting-started-with-kubernetes.md)
 
